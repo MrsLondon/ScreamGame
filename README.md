@@ -32,7 +32,7 @@ _- Highest score with local storage._
 _- player.js: dray the player, move right and left, receive attack from the killer, update health bar, update power bar. increase power bar after specific time, draw the knife, move the knife to the killer._
 _- killer.js: draw the killer, move the killer, generate killers randomly from left right direction, receive stab wound from victim and update life bar, attacks the victim._
 _- shield.js: draw the shield._
-_- script.js: build DOM, display splash screen, addEventLisitener to start game, draw canvas, draw game platform., display game over screen, background image, design game platform, update game, collision between the victim and killer, collision between killer and knife, update score, game reset, add musics, collision between shield and victim, update the victim's life bar by picking up the shield, update highest score with local storage._
+_- index.js: build DOM, display splash screen, addEventLisitener to start game, draw canvas, draw game platform., display game over screen, background image, design game platform, update game, collision between the victim and killer, collision between killer and knife, update score, game reset, add musics, collision between shield and victim, update the victim's life bar by picking up the shield, update highest score with local storage._
 
 # States y States Transitions
 

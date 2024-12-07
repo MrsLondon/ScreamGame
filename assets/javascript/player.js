@@ -81,10 +81,10 @@ class Player {
   }
 }
 
-class PowerBall {
+class powerKnife {
   constructor(xPosition, yPosition, direction, strength) {
-    const powerBallImage = new Image();
-    this.image = powerBallImage;
+    const powerKnifeImage = new Image();
+    this.image = powerKnifeImage;
     this.imagesSrc = [
       "assets/images/messer.png",
       "assets/images/messer.png",
