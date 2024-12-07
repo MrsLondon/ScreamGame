@@ -121,21 +121,21 @@ function createKiller() {
   return new Killer(canvas.width, platformYPosition);
 }
 
-function createPowerBall() {
+function createpowerKnife() {
   if (player.power <= 0) {
     return;
   }
   player.power -= 10;
-  let powerBallPositionX;
+  let powerKnifePositionX;
   if (player.direction === "right") {
-    powerBallPositionX = player.xPosition + player.width - 25;
+    powerKnifePositionX = player.xPosition + player.width - 25;
   } else {
-    powerBallPositionX = player.xPosition - 15;
+    powerKnifePositionX = player.xPosition - 15;
   }
   playerAttackAudio.currentTime = 0;
   playerAttackAudio.play();
-  return new PowerBall(
-    powerBallPositionX,
+  return new powerKnife(
+    powerKnifePositionX,
     player.yPosition,
     player.direction,
     player.strength
@@ -210,9 +210,9 @@ window.onload = () => {
     } else if (event.code === "ArrowLeft") {
       player.moveLeft();
     } else if (event.code === "Space") {
-      const powerBall = createPowerBall();
-      if (powerBall !== undefined) {
-        knifeArr.push(powerBall);
+      const powerKnife = createpowerKnife();
+      if (powerKnife !== undefined) {
+        knifeArr.push(powerKnife);
       }
     }
   });
@@ -280,7 +280,7 @@ window.onload = () => {
 
     // draw knife
     for (let i = 0; i < knifeArr.length; i++) {
-      // draw powerball
+      // draw powerKnife
       knifeArr[i].draw();
 
       // move knife
@@ -291,7 +291,7 @@ window.onload = () => {
         knifeArr[i].xPosition + knifeArr[i].width < 0 ||
         knifeArr[i].xPosition > canvas.width
       ) {
-        knifeArr.splice(i, 1);
+        knifeArr.splice(i, 1); 
         continue;
       }
 
